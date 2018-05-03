@@ -10,7 +10,7 @@ import axios from 'axios';
 class Search extends Component {
     constructor(props) {
         super(props);
-        
+
         this.state = {
             searchText: '',
             amount: Number(localStorage['imagefinder-amount']) || 15,
