@@ -9,7 +9,7 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 
 class ImageResults extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -70,7 +70,7 @@ class ImageResults extends Component {
                     open={this.state.open}
                     onRequestClose={this.handleClose}
                 >
-                    <img src={this.state.currentImg} alt="" style={{ width: '100%' }} />
+                    <a href={this.state.currentImg} target="_blank"><img src={this.state.currentImg} alt="" style={{ width: '100%' }} /></a>
                 </Dialog>
             </div>
         );
